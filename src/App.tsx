@@ -1,12 +1,14 @@
 import './App.css'
-import Encabezado from './components/encabezado';
+import Encabezado from './components/Encabezado';
 
 function App() {
 
   return (
-    <div className='App'>
+    <body>
+      <div className='App'>
       <Encabezado/>
     </div>
+    </body>
   )
 }
 
