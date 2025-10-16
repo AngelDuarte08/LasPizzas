@@ -1,12 +1,13 @@
 import './App.css'
+import Encabezado from './components/encabezado';
 
 function App() {
 
   return (
-    <body>
-      
-    </body>
+    <div className='App'>
+      <Encabezado/>
+    </div>
   )
 }
 
-export default App
+export default App;
