@@ -41,7 +41,7 @@ npm install
 npm run dev
 ```
 
-4. Open in your browser at [http://localhost:3000](http://localhost:3000)
+4. Open in your browser at [http://localhost:5173/](http://localhost:5173/)
 
 ## Project Structure
 
