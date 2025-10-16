@@ -1,11 +1,11 @@
 import './App.css'
+import PizzaList from './pizzas'
 
 function App() {
-
   return (
-    <body>
-      
-    </body>
+    <div className="App">
+      <PizzaList />
+    </div>
   )
 }
 
