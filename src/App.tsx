@@ -1,5 +1,6 @@
 import './App.css'
 import Encabezado from './components/Encabezado';
+import Pie from './components/Pie';
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
     <body>
       <div className='App'>
       <Encabezado/>
+      <Pie/>
     </div>
     </body>
   )
