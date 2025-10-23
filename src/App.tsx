@@ -1,20 +1,18 @@
-import './App.css'
+import './App.css';
 import Encabezado from './components/Encabezado';
 import Pie from './components/Pie';
-import PizzaList from './pizzas'
-import BannerRotativo from './components/banner';
+import BannerRotativo from './components/Banner';
+import Selector from './components/Selector'; // ✅ Importa el componente que ya gestiona Cart y PizzaList
 
 function App() {
   return (
-    <body>
-      <div className='App'>
-      <Encabezado/>
-      <BannerRotativo></BannerRotativo>
-      <PizzaList/>
-      <Pie/>
+    <div className='App'>
+      <Encabezado />
+      <BannerRotativo />
+      <Selector /> {/* ✅ Aquí se renderiza todo el flujo de pizzas y carrito */}
+      <Pie />
     </div>
-    </body>
-  )
+  );
 }
 
 export default App;
