@@ -1,0 +1,124 @@
+.cart {
+  top: 0;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 20px 0;
+  z-index: 1000;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart h2 {
+  margin-bottom: 12px;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.cart p {
+  margin: 8px 0;
+  color: #555;
+  font-style: italic;
+  text-align: center;
+}
+
+.cart-total {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-top: 12px;
+  text-align: right;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
+}
+
+.cart li img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.cart li span,
+.cart li strong {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.cart li strong {
+  font-weight: bold;
+}
+
+.cart li:hover {
+  background-color: #f5f5f5;
+}
+
+/* Botón eliminar */
+.delete {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete:hover {
+  background-color: #c62828;
+}
+
+/* Botón continuar */
+.cart button:not(.delete) {
+  margin-top: 16px;
+  padding: 10px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart button:not(.delete):hover {
+  background-color: #388e3c;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cart {
+    padding: 12px;
+  }
+
+  .cart li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart li img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .cart-total {
+    text-align: center;
+  }
+}
